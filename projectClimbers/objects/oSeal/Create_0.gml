@@ -1,5 +1,8 @@
 /// @description initialize enemy
 
+initial_x = oSeal.x;
+initial_y = oSeal.y;
+
 hit = false;
 
 left = 1;

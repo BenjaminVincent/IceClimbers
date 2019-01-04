@@ -33,13 +33,31 @@ resolve_collision(collision_tile_map_id, 32, velocity);
 if x_input < 0 && place_meeting(x - 3, y, oCollide) {
 	left = 0;
 	right = 1;
+// (GOING RIGHT)
 } else if x_input > 0 && place_meeting(x + 3, y, oCollide) {
 	left = 1;
 	right = 0;
 }
 
-// Collides with player
+// Collides with oPlayer
 
 if place_meeting(x, y, oPlayer) {
 	with(oPlayer) y = 1099;
 }
+
+if place_meeting(x, y, oHammer) {
+	sprite_index = sSealHit;
+	alarm[0] = room_speed;
+	
+	if oSeal.x > initial_x {
+		left = 1;
+		right = 0;
+	} else if oSeal.x < initial_x {
+		left = 0;
+		right = 1;
+	}
+	
+}
+
+
+

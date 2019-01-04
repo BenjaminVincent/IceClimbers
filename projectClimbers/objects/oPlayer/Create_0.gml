@@ -1,6 +1,6 @@
 /// @description
-
-
+dir = "right";
+can_attack = true;
 velocity = [0, 0];
 grav = 1.6;
 jump_speed = 24;

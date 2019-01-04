@@ -4,6 +4,7 @@ right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 jump = keyboard_check_pressed(ord("X"));
+attack = keyboard_check_pressed(ord("Z"));
 
 var x_input = (right - left) * acceleration;
 
@@ -35,4 +36,37 @@ if on_ground {
 		if jump && velocity[v2_y] <= -(jump_speed/3) {
 			velocity[v2_y] = -(jump_speed/3);
 		}
+}
+
+
+
+/*
+	Setting direction for player
+	updating sprite
+*/
+
+// moving right
+if x_input > 0 {
+	dir = "right";
+	image_xscale = 1;
+	
+// moving left
+} else if x_input < 0 {
+	dir = "left"; 
+	image_xscale = -1;	
+}
+if can_attack == true {
+	if dir == "right" && attack {
+		can_attack = false;
+		alarm[1] = room_speed;
+		instance_create_depth(x + 32, y, -1, oHammer);
+		alarm[0] = 30;
+	}
+
+	if dir == "left" && attack {
+		can_attack = false;
+		alarm[1] = room_speed;
+		instance_create_depth(x - 32, y, -1, oHammer);
+		alarm[0] = 30;
+	}
 }
