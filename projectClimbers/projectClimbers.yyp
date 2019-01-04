@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "6fb96b74-84d9-494a-9192-add58432298d",
+            "Value": {
+                "id": "6220400b-daab-4466-9ea2-e5e21b498a8a",
+                "resourcePath": "sprites\\sLife\\sLife.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "70d892ec-c325-437a-b9cc-7ca31bb79802",
             "Value": {
                 "id": "764cc513-6329-4396-9e1b-93d9a9ba3ba8",
