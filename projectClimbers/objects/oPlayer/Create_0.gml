@@ -10,4 +10,4 @@ acceleration = 2.1;
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
 
-health = 3
+health = 3;

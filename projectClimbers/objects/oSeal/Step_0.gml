@@ -43,6 +43,7 @@ if x_input < 0 && place_meeting(x - 3, y, oCollide) {
 
 if place_meeting(x, y, oPlayer) {
 	with(oPlayer) y = 1099;
+	health--;
 }
 
 if place_meeting(x, y, oHammer) {
