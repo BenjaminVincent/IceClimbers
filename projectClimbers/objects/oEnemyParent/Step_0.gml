@@ -37,3 +37,9 @@ if x_input < 0 && place_meeting(x - 3, y, oCollide) {
 	left = 1;
 	right = 0;
 }
+
+// Collides with player
+
+if place_meeting(x, y, oPlayer) {
+	with(oPlayer) y = 1099;
+}

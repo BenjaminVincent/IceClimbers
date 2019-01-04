@@ -1,6 +1,6 @@
 /// @description
 
-// x = 0, y = 0
+
 velocity = [0, 0];
 grav = 1.6;
 jump_speed = 24;
