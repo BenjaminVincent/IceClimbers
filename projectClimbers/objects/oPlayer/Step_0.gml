@@ -30,14 +30,18 @@ var on_ground = tile_collision_point(collision_tile_map_id, [bbox_left, bbox_bot
 
 if on_ground {
 	if jump {
-		velocity[v2_y] = - jump_speed;	
-	} 
+		velocity[v2_y] = - jump_speed;
+		sprite_index = sPlayerJump
+	}
 } else {
 		if jump && velocity[v2_y] <= -(jump_speed/3) {
 			velocity[v2_y] = -(jump_speed/3);
 		}
 }
 
+if on_ground && !jump {
+	sprite_index = sPlayer;	
+}
 
 
 /*
