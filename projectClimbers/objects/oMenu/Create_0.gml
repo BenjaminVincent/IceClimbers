@@ -1,4 +1,4 @@
-// crete globl variables
+// create global variables
 global.asspect_width = 16;
 global.asspect_hight = 9;
 global.viewport_height = room_height*global.asspect_hight/global.asspect_width;
