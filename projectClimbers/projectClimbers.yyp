@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "2841db52-be00-4415-b56b-52b6b4f82bf1",
+            "Value": {
+                "id": "3294d720-e90f-4849-b6eb-21b9925226d4",
+                "resourcePath": "views\\2841db52-be00-4415-b56b-52b6b4f82bf1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "338dcaeb-1771-4608-8c4e-8eba0ca1f04d",
             "Value": {
                 "id": "826f2d6e-54ef-4a9f-b189-6c8587ca94f5",
@@ -171,6 +179,14 @@
             "Value": {
                 "id": "55cda6b7-2041-4513-bf32-1b7ea738b969",
                 "resourcePath": "views\\593bc75c-1c53-4d9a-acdf-3ea84da43a53.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "59e76954-d384-4c19-afa2-aec7db2ae6c6",
+            "Value": {
+                "id": "432c2eee-6a2e-434c-af73-36ac4b673f19",
+                "resourcePath": "views\\afee5b60-846a-4603-ad41-2fd0e47fdfa3-room.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -292,6 +308,14 @@
                 "id": "3cbf03d2-5de8-4d75-8d7a-60e73c548f77",
                 "resourcePath": "objects\\oHammer\\oHammer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b97034e5-6a7d-4f14-b50e-d905fc203dff",
+            "Value": {
+                "id": "91e67196-f967-430e-8ab2-29d3d7e41b14",
+                "resourcePath": "views\\9395847a-64a0-4932-8014-37a587d55fa0-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

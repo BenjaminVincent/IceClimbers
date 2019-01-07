@@ -25,7 +25,7 @@ velocity[v2_y] += grav;
 
 // resolve
 resolve_collision(collision_tile_map_id, 32, velocity);
-resolve_collision(break_tile_map_id, 32, velocity);
+//resolve_collision(break_tile_map_id, 32, velocity);
 
 var on_ground = tile_collision_point(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right - 1, bbox_bottom]);
 
