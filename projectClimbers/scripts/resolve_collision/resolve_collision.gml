@@ -11,6 +11,14 @@ var velocity = argument3;
 var v2_x = 0;
 var v2_y = 1;
 
+// Cell locations of right and left side of the object
+r_pixel_x = tilemap_get_cell_x_at_pixel(tile_map_id_2, bbox_right, oPlayer.y);
+r_pixel_y = tilemap_get_cell_y_at_pixel(tile_map_id_2, bbox_right, oPlayer.y -32);
+cell_right = tilemap_get(tile_map_id_2, r_pixel_x, r_pixel_y);
+l_pixel_x = tilemap_get_cell_x_at_pixel(tile_map_id_2, bbox_left, oPlayer.y);
+l_pixel_y = tilemap_get_cell_y_at_pixel(tile_map_id_2, bbox_left, oPlayer.y - 32);
+cell_left = tilemap_get(tile_map_id_2, l_pixel_x, l_pixel_y);
+
 // Horizontal
 x += velocity[v2_x]
 
@@ -55,11 +63,24 @@ if velocity[v2_y] > 0 {
 		velocity[@ v2_y] = 0;
 		if tile_top && tile_map_id_2 {	
 			var oPlayer_x = tilemap_get_cell_x_at_pixel(tile_map_id_2, oPlayer.x, oPlayer.y);
+			var oPlayer_x1r = tilemap_get_cell_x_at_pixel(tile_map_id_2, oPlayer.x + 32, oPlayer.y);
+			var oPlayer_x1l = tilemap_get_cell_x_at_pixel(tile_map_id_2, oPlayer.x - 32, oPlayer.y);
 			var oPlayer_y = tilemap_get_cell_y_at_pixel(tile_map_id_2, oPlayer.x, oPlayer.y - 32);		
-			var data = tilemap_get(tile_map_id_2, oPlayer_x, oPlayer_y);
-			var index = tile_get_index(data);
-			data = tile_set_index(data, 0);
+			var tilemap_data = tilemap_get(tile_map_id_2, oPlayer_x, oPlayer_y);
+			var index = tile_get_index(tilemap_data);
+			var data = tile_set_index(tilemap_data, 0);
 			tilemap_set(tile_map_id_2, data, oPlayer_x, oPlayer_y);
+			if 0 == index {
+				if cell_right == tilemap_data{
+					data_1 = tilemap_get(tile_map_id_2, oPlayer_x1l, oPlayer_y);
+					data_1 = tile_set_index(data_1,0);
+					tilemap_set(tile_map_id_2, data_1, oPlayer_x1l, oPlayer_y);
+				} else if cell_left == tilemap_data{
+					data_2 = tilemap_get(tile_map_id_2, oPlayer_x1r, oPlayer_y);
+					data_2 = tile_set_index(data_2,0);
+					tilemap_set(tile_map_id_2, data_2, oPlayer_x1r, oPlayer_y);
+				}
+			}
 		}
 	} 
 }
