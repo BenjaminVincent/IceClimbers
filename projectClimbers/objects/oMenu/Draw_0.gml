@@ -4,6 +4,7 @@
 // You can write your code in this editor
 
 var i = 0
+draw_set_halign(fa_center);
 
 repeat(button_count) {
 	

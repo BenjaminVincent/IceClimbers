@@ -1,3 +1,5 @@
+/// @description Draw menu
+
 // create global variables
 global.asspect_width = 16;
 global.asspect_hight = 9;
@@ -14,11 +16,9 @@ window_set_rectangle(xpos, ypos, room_width,global.viewport_height);
 
 surface_resize(application_surface, room_width, global.viewport_height);
 
-/// @description Insert description here
-// You can write your code in this editor
-menu_x = x
-menu_y = y
-button_h = 32
+//center
+x = room_width/2;
+y = room_height/2;
 
 //buttons
 buttons[0] = "New Game"
@@ -28,3 +28,7 @@ button_count = array_length_1d(buttons)
 
 menu_index = 0
 last_selected = 0
+
+button_h = 32
+menu_x = x
+menu_y = y - floor(button_count/2) * button_h;
