@@ -16,6 +16,7 @@ var v2_y = 1;
 // Horizontal
 velocity[v2_x] = clamp(velocity[v2_x] + x_input, - max_velocity[v2_x], max_velocity[v2_x]);
 
+// When we release our directional button, gradually slow the v2_x by 20% until velocity = 0 (Not moving)
 if x_input == 0 {
 	velocity[v2_x] = lerp(velocity[v2_x], 0, 0.2);	
 }
@@ -23,12 +24,15 @@ if x_input == 0 {
 // Gravity
 velocity[v2_y] += grav;
 
+  
+
 // resolve
-resolve_collision(collision_tile_map_id, 32, velocity);
+resolve_collision(collision_tile_map_id, break_tile_map_id, 32, velocity);
 //resolve_collision(break_tile_map_id, 32, velocity);
 
-var on_ground = tile_collision_point(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right - 1, bbox_bottom]);
 
+// In the on_ground variable we are checking the bottom left and bottom right corners of our sprite
+var on_ground = tile_collision_point(collision_tile_map_id, break_tile_map_id, [bbox_left, bbox_bottom], [bbox_right - 1, bbox_bottom]);
 if on_ground {
 	if jump {
 		velocity[v2_y] = - jump_speed;
