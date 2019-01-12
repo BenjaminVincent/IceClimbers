@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "2da56853-81fb-4578-8668-485cfc6b537b",
+            "Value": {
+                "id": "1377886a-f3f8-4a5d-b613-2f9fd77396ae",
+                "resourcePath": "scripts\\tile_collision_point_bottom_2d\\tile_collision_point_bottom_2d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2e368638-3802-4793-8a49-a0dfbc5ce3e7",
             "Value": {
                 "id": "0ae8894c-1051-425c-add0-7b7a09407292",
@@ -417,6 +425,7 @@
     ],
     "script_order": [
         "c1a81544-b15c-4247-b215-48e203150562",
+        "2da56853-81fb-4578-8668-485cfc6b537b",
         "139b63ce-7d20-4aca-9e71-fb6b054dcdab"
     ],
     "tutorial": ""
