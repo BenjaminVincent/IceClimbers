@@ -27,7 +27,7 @@ if x_input == 0 {
 velocity[v2_y] += grav;
 
 // resolve
-resolve_collision(collision_tile_map_id, break_tile_map_id, 32, velocity);
+resolve_collision(collision_tile_map_id, 32, velocity);
 
 // check for no tile under (GOING LEFT)
 if x_input < 0 && place_meeting(x - 3, y, oCollide) {

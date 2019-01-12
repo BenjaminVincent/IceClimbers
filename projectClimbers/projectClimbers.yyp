@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "cdff96fc-40d4-4244-bc10-175af20cbfb8",
+            "Value": {
+                "id": "e92a548c-d33f-4f93-82af-115df5b6f47f",
+                "resourcePath": "scripts\\resolve_cliff\\resolve_cliff.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ce1c9aef-37c4-4ec0-b90a-0e5bc16b3b5b",
             "Value": {
                 "id": "df60deee-e705-48e1-91d8-d7bf3041f487",
@@ -407,14 +415,6 @@
             }
         },
         {
-            "Key": "fa5aef9c-5b0b-4360-b96f-36b8afedb6d5",
-            "Value": {
-                "id": "0562f378-ca17-432d-a5ae-c7f7646d7ceb",
-                "resourcePath": "sprites\\sTileBreak\\sTileBreak.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "fd37fbfe-48f1-4350-b858-3af471e850ac",
             "Value": {
                 "id": "1d2fd1ee-ca5a-46e5-9ea7-0bf9548d5ad3",
@@ -425,8 +425,9 @@
     ],
     "script_order": [
         "c1a81544-b15c-4247-b215-48e203150562",
-        "2da56853-81fb-4578-8668-485cfc6b537b",
-        "139b63ce-7d20-4aca-9e71-fb6b054dcdab"
+        "139b63ce-7d20-4aca-9e71-fb6b054dcdab",
+        "cdff96fc-40d4-4244-bc10-175af20cbfb8",
+        "2da56853-81fb-4578-8668-485cfc6b537b"
     ],
     "tutorial": ""
 }

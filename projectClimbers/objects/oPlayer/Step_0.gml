@@ -27,12 +27,12 @@ velocity[v2_y] += grav;
   
 
 // resolve
-resolve_collision(collision_tile_map_id, break_tile_map_id, 32, velocity);
-//resolve_collision(break_tile_map_id, 32, velocity);
+resolve_collision(collision_tile_map_id, 32, velocity);
+//resolve_collision(collision_tile_map_id, 32, velocity);
 
 
 // In the on_ground variable we are checking the bottom left and bottom right corners of our sprite
-var on_ground = tile_collision_point(collision_tile_map_id, break_tile_map_id, [bbox_left, bbox_bottom], [bbox_right - 1, bbox_bottom]);
+var on_ground = tile_collision_point(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right - 1, bbox_bottom]);
 if on_ground {
 	if jump {
 		velocity[v2_y] = - jump_speed;

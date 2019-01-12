@@ -28,7 +28,7 @@ velocity[v2_y] += grav;
 
 // resolve
 
-resolve_collision(collision_tile_map_id, break_tile_map_id, 32, velocity);
+resolve_collision(collision_tile_map_id, 32, velocity);
 // check if hitting wall (GOING LEFT)
 if right_hit {
 	left = 1;
@@ -40,6 +40,10 @@ if right_hit {
 	right = 1;
 	left_hit = false;
 }
+
+//Reaches cliff
+resolve_cliff(collision_tile_map_id,32,velocity);
+
 
 // Collides with oPlayer
 
