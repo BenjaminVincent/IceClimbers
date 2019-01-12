@@ -271,14 +271,6 @@
             }
         },
         {
-            "Key": "ae67c96a-a996-45c3-9e27-b462283d391b",
-            "Value": {
-                "id": "515e9a41-b984-4cad-ada5-584bd18347f0",
-                "resourcePath": "objects\\oScreencontrol\\oScreencontrol.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "afee5b60-846a-4603-ad41-2fd0e47fdfa3",
             "Value": {
                 "id": "37e2b7e6-0d1d-4701-bc7d-139630a2fbe0",
