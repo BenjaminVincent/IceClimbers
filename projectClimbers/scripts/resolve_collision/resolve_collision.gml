@@ -32,6 +32,7 @@ if velocity[v2_x] > 0 {
 		x -= bbox_right - x;
 		// @ accesses the actual array of the object, example: oPlayer
 		velocity[@ v2_x] = 0;
+		right_hit = true;
 	}
 // Left side
 } else {
@@ -40,6 +41,7 @@ if velocity[v2_x] > 0 {
 		x = bbox_left & ~(tile_size - 1);
 		x += tile_size + x - bbox_left;
 		velocity[@ v2_x] = 0;
+		left_hit = true;
 	}
 }
 
@@ -48,7 +50,9 @@ y += velocity[v2_y];
 
 // Vert collision
 if velocity[v2_y] > 0 {
-	var tile_bottom = tile_collision_point(tile_map_id, tile_map_id_2, [bbox_left, bbox_bottom - 1], [bbox_right - 1, bbox_bottom - 1]);
+	var bottom_left_point = [bbox_left, bbox_bottom - 1];
+	var bottom_right_point = [bbox_right - 1, bbox_bottom - 1];
+	var tile_bottom = tile_collision_point(tile_map_id, tile_map_id_2,bottom_left_point,bottom_right_point);
 	if tile_bottom {
 		y = bbox_bottom & ~(tile_size - 1);
 		y -= bbox_bottom - y;

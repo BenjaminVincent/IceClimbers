@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "36c927a9-37ca-4fc3-be50-be1b10e8ac5b",
+            "Value": {
+                "id": "f4890a50-9011-48ed-adb4-5e19e88e72d1",
+                "resourcePath": "objects\\oSeal_jacob\\oSeal_jacob.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36dcf972-819a-4d1e-98fc-f3181a18b62c",
             "Value": {
                 "id": "aede66fe-37cf-4769-923e-46e586e6ec7f",
