@@ -48,7 +48,7 @@ resolve_cliff(collision_tile_map_id,32,velocity);
 // Collides with oPlayer
 
 if place_meeting(x, y, oPlayer) {
-	with(oPlayer) y = 1099;
+	with(oPlayer) y = room_height - 48;
 	health--;
 }
 

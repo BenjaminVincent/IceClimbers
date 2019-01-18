@@ -79,3 +79,12 @@ if can_attack == true {
 		alarm[0] = 30;
 	}
 }
+
+
+// Loop to other side
+
+if (x > room_width) {
+	x = 0;	
+} else if (x < 0) {
+	x = room_width;	
+}
