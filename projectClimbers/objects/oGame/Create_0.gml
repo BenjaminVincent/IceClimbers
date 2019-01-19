@@ -1,5 +1,7 @@
 // initalize viewport
 var border_percent = 0.3;
+start_time = 0;
+
 
 view_enabled = true;
 view_visible[0] = true;
