@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Control timer
 
 PassedTime = current_time - start_time;
 minutes = PassedTime div 60000;
