@@ -1,8 +1,10 @@
+draw_set_font(fEnd);
+draw_set_halign(fa_center);
+draw_text_color(menu_x, 128, "You Won",col_1,0,col_2,0,1);
+
 
 var i = 0
-draw_set_halign(fa_center);
 draw_set_font(fDefault)
-
 repeat(button_count) {
 	
 	
