@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Control timer
 
 bottom_left_point = [oPlayer.bbox_left, oPlayer.bbox_bottom];
 bottom_right_point = [oPlayer.bbox_right, oPlayer.bbox_bottom];
