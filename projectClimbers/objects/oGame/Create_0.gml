@@ -30,9 +30,9 @@ view_temp = viewport_bottom_ypos
 
 // set oGame position
 snap_grid_height = viewport_height/2 - viewport_height/2 mod 32
-y = room_height - viewport_height/2 + 32; 
+y = room_height - viewport_height/2; 
 x = room_width/2;
-screen_move_interval = 12*32
+screen_move_interval = 14*32
 
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
