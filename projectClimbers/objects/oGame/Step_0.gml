@@ -14,13 +14,14 @@ if seconds < 10 {
 } else {
 	seconds = seconds;	
 }
+viewport_ypos = camera_get_view_y(view_camera[0])
 
-if oPlayer.y < (saved_player_position - (32*12)) and tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point) > 0 {
-	while oPlayer.y - camera_get_view_y(view_camera[0]) < global.viewport_height - 48 {
-		camera_set_view_pos(view_camera[0],0,camera_scroll_y)
-		camera_scroll_y --;
-	}
-	
-	//camera_set_view_speed(view_camera[0],0,0);
+
+if oPlayer.y < (saved_player_position - (screen_move_interval)) and tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point) > 0 {
+	oGame.y -= (saved_player_position - oPlayer.y)
+	while ((viewport_ypos + viewport_height) mod 32) != 0 {
+		oGame.y --;
+	} 
 	saved_player_position = oPlayer.y;
+	show_debug_message(y)
 }
