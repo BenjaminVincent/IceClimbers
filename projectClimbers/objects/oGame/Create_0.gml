@@ -37,5 +37,3 @@ screen_move_interval = 14*32
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
-show_debug_message("oGame's y = " + string(y))
-show_debug_message("the viewport bottom = " + string(viewport_bottom_ypos))

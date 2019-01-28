@@ -18,14 +18,16 @@ if seconds < 10 {
 	seconds = seconds;	
 } #endregion
 
-/* code used for debuging the the bottom screen position in room
-if keyboard_check_pressed(ord("U")) {
+#region code used for debuging the bottom screen position in the room
+/*if keyboard_check_pressed(ord("U")) {
 	y --;
 	show_debug_message("oGame's y = " + string(y))
 	show_debug_message("the viewport bottom = " + string(viewport_bottom_ypos))
 	viewport_ypos = camera_get_view_y(view_camera[0]);
 	viewport_bottom_ypos = viewport_ypos + viewport_height;
-}*/
+}*/ #endregion
+
+#region view and oGame movment
 // the play has moved high enough to start moving the view
 if oPlayer.y < (saved_player_position - 12*32) and tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point) > 0 {
 	oGame.y -= screen_move_interval
@@ -44,4 +46,4 @@ if view_temp != viewport_bottom_ypos {
 	//show_debug_message("the tempory value = " + string(view_temp))
 } else if view_temp == viewport_bottom_ypos and ((viewport_bottom_ypos) mod 32) != 0 {
 	oGame.y --;
-}
+}#endregion
