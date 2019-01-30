@@ -22,7 +22,7 @@ view_yport[0] = 0;
 view_wport[0] = viewport_width;
 view_hport[0] = viewport_height;
 
-view_camera[0] = camera_create_view(32,camera_scroll_y,viewport_width-64,viewport_height,0,oGame,0,5,0,viewport_height);//(room_height/2)-room_height*border_percent);
+view_camera[0] = camera_create_view(32,camera_scroll_y,viewport_width-64,viewport_height,0,oGame,0,7,0,viewport_height);//(room_height/2)-room_height*border_percent);
 viewport_ypos = camera_get_view_y(view_camera[0])
 viewport_bottom_ypos = viewport_ypos + viewport_height
 view_temp = viewport_bottom_ypos
