@@ -37,3 +37,11 @@ screen_move_interval = 14*32
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
+
+enum states {
+	// oPlayer	
+	move,
+	attack,
+	hit,
+	death
+}
