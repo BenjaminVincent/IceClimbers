@@ -1,6 +1,5 @@
 /// @description
 dir = "right";
-can_attack = true;
 velocity = [0, 0];
 grav = 1.6;
 jump_speed = 24;
@@ -11,3 +10,7 @@ var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
 
 health = 3;
+
+
+// state default
+state = states.move
