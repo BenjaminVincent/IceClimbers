@@ -44,6 +44,6 @@ if view_temp != viewport_bottom_ypos {
 	view_temp = viewport_bottom_ypos
 	//show_debug_message("the viewport bottom = " + string(viewport_bottom_ypos))
 	//show_debug_message("the tempory value = " + string(view_temp))
-} else if view_temp == viewport_bottom_ypos and ((viewport_bottom_ypos) mod 32) != 0 {
+} else if view_temp == viewport_bottom_ypos and ((viewport_bottom_ypos) mod 32) != 0 and oGame.y > 0 {
 	oGame.y --;
 }#endregion
