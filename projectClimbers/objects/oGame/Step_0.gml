@@ -47,3 +47,12 @@ if view_temp != viewport_bottom_ypos {
 } else if view_temp == viewport_bottom_ypos and ((viewport_bottom_ypos) mod 32) != 0 and oGame.y > 0 {
 	oGame.y --;
 }#endregion
+
+if mouse_check_button_pressed(mb_left) {
+	var viewprt_ypos = camera_get_view_y(view_camera[0])
+	var viewprt_bottom_ypos = viewprt_ypos + view_hport[0]
+	var layer_id = layer_get_id("collisionTiles");
+	var colli_tile_map_id = layer_tilemap_get_id(layer_id);
+	var landing_cell = tilemap_get_at_pixel(colli_tile_map_id,mouse_x,viewport_bottom_ypos-48)
+	show_debug_message("landing cell = "+string(landing_cell))
+}

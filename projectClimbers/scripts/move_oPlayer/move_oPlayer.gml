@@ -4,7 +4,8 @@ up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 jump = keyboard_check_pressed(ord("X"));
 hammer = keyboard_check_pressed(ord("Z"));
-
+viewport_ypos = camera_get_view_y(view_camera[0])
+viewport_bottom_ypos = viewport_ypos + view_hport[0]
 
 var x_input = (right - left) * acceleration;
 
@@ -71,7 +72,7 @@ if x_input > 0 {
 	dir = "left"; 
 	image_xscale = -1;	
 }
-if place_meeting(x, y, oSeal) {
+if place_meeting(x, y, oSeal) or y > viewport_bottom_ypos {
 	state = states.hitplayer
 }
 if hammer and on_ground {
