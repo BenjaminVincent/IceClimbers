@@ -72,6 +72,6 @@ if x_input > 0 {
 	image_xscale = -1;	
 }
 
-if hammer {
+if hammer and on_ground {
 	state = states.attack
 }

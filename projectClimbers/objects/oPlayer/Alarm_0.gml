@@ -2,5 +2,4 @@
 
 instance_destroy(oHammer);
 state = states.move
-alarm[0] = 30;
 

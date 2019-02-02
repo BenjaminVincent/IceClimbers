@@ -27,22 +27,28 @@ if x_input == 0 {
 velocity[v2_y] += grav;
 
 // resolve
-resolve_collision(collision_tile_map_id, 32, velocity);
 
-// check for no tile under (GOING LEFT)
-if x_input < 0 && place_meeting(x - 3, y, oCollide) {
-	left = 0;
-	right = 1;
-// (GOING RIGHT)
-} else if x_input > 0 && place_meeting(x + 3, y, oCollide) {
+resolve_collision(collision_tile_map_id, 32, velocity);
+// check if hitting wall (GOING LEFT)
+if right_hit {
 	left = 1;
 	right = 0;
+	right_hit = false;
+// (GOING RIGHT)
+} else if left_hit {
+	left = 0;
+	right = 1;
+	left_hit = false;
 }
+
+//Reaches cliff
+resolve_cliff(collision_tile_map_id,32,velocity);
+
 
 // Collides with oPlayer
 
 if place_meeting(x, y, oPlayer) {
-	with(oPlayer) y = 1099;
+	with(oPlayer) y = room_height - 48;
 	health--;
 }
 

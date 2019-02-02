@@ -146,7 +146,7 @@
             "Key": "36c927a9-37ca-4fc3-be50-be1b10e8ac5b",
             "Value": {
                 "id": "f4890a50-9011-48ed-adb4-5e19e88e72d1",
-                "resourcePath": "objects\\oSeal_jacob\\oSeal_jacob.yy",
+                "resourcePath": "objects\\oSeal\\oSeal.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -455,11 +455,11 @@
             }
         },
         {
-            "Key": "f0925ca1-f2cb-413f-ad09-007c367ae427",
+            "Key": "eb7b4e6d-4165-4e3c-8c52-902d881af3b6",
             "Value": {
-                "id": "86452787-74fa-4e11-971a-2837a591224d",
-                "resourcePath": "objects\\oSeal\\oSeal.yy",
-                "resourceType": "GMObject"
+                "id": "f312645b-0c03-4f53-a89a-e312fa74a702",
+                "resourcePath": "scripts\\hit_oPlayer\\hit_oPlayer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -509,7 +509,8 @@
         "cdff96fc-40d4-4244-bc10-175af20cbfb8",
         "2da56853-81fb-4578-8668-485cfc6b537b",
         "947541a9-5c1b-4fb8-9d11-f24c900627b5",
-        "7e164be3-32d2-46e3-b733-6ea8c5c05a11"
+        "7e164be3-32d2-46e3-b733-6ea8c5c05a11",
+        "eb7b4e6d-4165-4e3c-8c52-902d881af3b6"
     ],
     "tutorial": ""
 }

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oHammer",
     "eventList": [
-        
+        {
+            "id": "4682d90f-4ce8-49b9-919e-3218ef048ec4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "b481b43b-6643-4378-b1d9-40df5352becc"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
