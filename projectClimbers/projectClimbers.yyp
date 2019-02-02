@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "2180cc5e-7017-487a-93e4-f2653024716d",
+            "Value": {
+                "id": "8758978b-aa30-49f7-a941-8aef6b870d37",
+                "resourcePath": "fonts\\fDefault_big\\fDefault_big.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2da56853-81fb-4578-8668-485cfc6b537b",
             "Value": {
                 "id": "1377886a-f3f8-4a5d-b613-2f9fd77396ae",
@@ -287,6 +295,14 @@
             }
         },
         {
+            "Key": "7850bbab-d4d0-4ef7-96bd-e94174f40998",
+            "Value": {
+                "id": "cadf6794-752c-4ea7-a0d4-c86c3b0648e0",
+                "resourcePath": "objects\\oMenu_Gameover\\oMenu_Gameover.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7e164be3-32d2-46e3-b733-6ea8c5c05a11",
             "Value": {
                 "id": "be586771-d248-4702-94b7-c4698e0b4bdd",
@@ -372,6 +388,14 @@
                 "id": "5f2269d9-64ac-4860-8bc8-577a7befa812",
                 "resourcePath": "views\\b101dcae-e20e-4b26-8120-64de0d455144.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b2be9e7c-d937-4083-8618-66ed9f037974",
+            "Value": {
+                "id": "2d6c072d-bec0-4e14-ba58-9f27aa4b63cd",
+                "resourcePath": "scripts\\death_oPlayer\\death_oPlayer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -510,7 +534,8 @@
         "2da56853-81fb-4578-8668-485cfc6b537b",
         "947541a9-5c1b-4fb8-9d11-f24c900627b5",
         "7e164be3-32d2-46e3-b733-6ea8c5c05a11",
-        "eb7b4e6d-4165-4e3c-8c52-902d881af3b6"
+        "eb7b4e6d-4165-4e3c-8c52-902d881af3b6",
+        "b2be9e7c-d937-4083-8618-66ed9f037974"
     ],
     "tutorial": ""
 }

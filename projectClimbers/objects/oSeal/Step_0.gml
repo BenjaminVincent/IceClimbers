@@ -47,10 +47,7 @@ resolve_cliff(collision_tile_map_id,32,velocity);
 
 // Collides with oPlayer
 
-if place_meeting(x, y, oPlayer) {
-	with(oPlayer) y = room_height - 48;
-	health--;
-}
+
 
 if place_meeting(x, y, oHammer) {
 	sprite_index = sSealHit;

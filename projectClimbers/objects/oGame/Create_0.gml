@@ -29,7 +29,6 @@ view_temp = viewport_bottom_ypos
 #endregion
 
 // set oGame position
-snap_grid_height = viewport_height/2 - viewport_height/2 mod 32
 y = room_height - viewport_height/2; 
 x = room_width/2;
 screen_move_interval = 14*32
@@ -40,8 +39,11 @@ collision_tile_map_id = layer_tilemap_get_id(layer_id);
 
 enum states {
 	// oPlayer	
-	move,
-	attack,
-	hit,
-	death
+	moveplayer,
+	attackplayer,
+	hitplayer,
+	deathplayer,
+	moveseal,
+	hitseal,
+	deathseal
 }

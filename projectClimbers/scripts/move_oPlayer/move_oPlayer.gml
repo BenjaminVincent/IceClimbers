@@ -71,7 +71,9 @@ if x_input > 0 {
 	dir = "left"; 
 	image_xscale = -1;	
 }
-
+if place_meeting(x, y, oSeal) {
+	state = states.hitplayer
+}
 if hammer and on_ground {
-	state = states.attack
+	state = states.attackplayer
 }

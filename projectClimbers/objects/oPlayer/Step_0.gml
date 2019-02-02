@@ -8,27 +8,27 @@
 		- Death
 */
 
-if (state == states.move) {
+if (state == states.moveplayer) {
 	#region Move
 	move_oPlayer();
 	#endregion
 }
 
-if (state == states.attack) {
+if (state == states.attackplayer) {
 	#region Attack
 	attack_oPlayer();
 	#endregion
 }
 
-if (state == states.hit) {
+if (state == states.hitplayer) {
 	#region Hit
-	
+	hit_oPlayer();
 	#endregion
 }
 
-if (state == states.death) {
+if (state == states.deathplayer) {
 	#region Death
-	
+	death_oPlayer()
 	#endregion
 }
 
