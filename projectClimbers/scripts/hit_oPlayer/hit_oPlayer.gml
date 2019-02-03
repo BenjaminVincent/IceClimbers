@@ -5,11 +5,18 @@ var layer_id = layer_get_id("collisionTiles");
 var collision_tile_map_id = layer_tilemap_get_id(layer_id);
 var cell_bump = 0
 var saved_player_position = x
-var landing_cell = tilemap_get_at_pixel(collision_tile_map_id,saved_player_position,viewport_bottom_ypos-48)
+if viewport_bottom_ypos == room_height {
+	var row_floor = 16
+} else {
+	var row_floor = 48
+}
+
+
+
+var landing_cell = tilemap_get_at_pixel(collision_tile_map_id,saved_player_position,viewport_bottom_ypos - row_floor)
 var reps = room_width/32
 
 show_debug_message("view bottom = " + string(viewport_bottom_ypos))
-show_debug_message("landing cell = "+string(landing_cell))
 // is the tile below the player soild?
 for (var i = 0; i < reps; i += 1) {
 	show_debug_message("landing cell = "+string(landing_cell))
@@ -17,19 +24,22 @@ for (var i = 0; i < reps; i += 1) {
 	if landing_cell != 0 {
 		show_debug_message("landing is solid")
 		reps = -1
-		y = viewport_bottom_ypos - 64;
-		x += cell_bump*32
+		y = viewport_bottom_ypos - 80;
+		//if odd iteration
+		x += ceil(cell_bump/2)*32
 		health--;
 
 		if health < 1 {
 			state = states.deathplayer
 		} else state = states.moveplayer;
 	//no	
-	} else
+	} else {
 		cell_bump = i
 		if (cell_bump mod 2) == 0 {
 			cell_bump *= -1
 		}
-		landing_cell = tilemap_get_at_pixel(collision_tile_map_id,saved_player_position + (cell_bump*32),viewport_bottom_ypos-65)
+		landing_cell = tilemap_get_at_pixel(collision_tile_map_id,saved_player_position + (cell_bump*32),viewport_bottom_ypos - row_floor)
+		show_debug_message("cell bump = " + string(cell_bump))
 		show_debug_message("iteration " + string(i))
+	}
 }
