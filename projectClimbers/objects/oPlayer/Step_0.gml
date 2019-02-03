@@ -34,7 +34,7 @@ if (state == states.hitplayer) {
 
 if (state == states.deathplayer) {
 	#region Death
-	death_oPlayer()
+	death_oPlayer();
 	#endregion
 }
 
