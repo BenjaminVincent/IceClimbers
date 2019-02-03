@@ -41,8 +41,10 @@ enum states {
 	// oPlayer	
 	moveplayer,
 	attackplayer,
+	immobileplayer,
 	hitplayer,
 	deathplayer,
+	// oSeal
 	moveseal,
 	hitseal,
 	deathseal

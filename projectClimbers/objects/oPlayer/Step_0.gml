@@ -20,6 +20,12 @@ if (state == states.attackplayer) {
 	#endregion
 }
 
+if (state == states.immobileplayer) {
+	#region Attack
+	immobile_oPlayer();
+	#endregion
+}
+
 if (state == states.hitplayer) {
 	#region Hit
 	hit_oPlayer();

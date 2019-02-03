@@ -78,3 +78,6 @@ if place_meeting(x, y, oSeal) or y > viewport_bottom_ypos {
 if hammer and on_ground {
 	state = states.attackplayer
 }
+if view_temp != viewport_bottom_ypos {
+	state = states.immobileplayer
+}

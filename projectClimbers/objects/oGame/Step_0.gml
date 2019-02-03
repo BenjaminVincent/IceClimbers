@@ -29,7 +29,7 @@ if seconds < 10 {
 
 #region view and oGame movment
 // the play has moved high enough to start moving the view
-if oPlayer.y < (saved_player_position - 12*32) and tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point) > 0 {
+if oPlayer.y < (saved_player_position - 12*32) and tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point) == 3 {
 	oGame.y -= screen_move_interval
 	viewport_ypos = camera_get_view_y(view_camera[0]);
 	viewport_bottom_ypos = viewport_ypos + viewport_height;
