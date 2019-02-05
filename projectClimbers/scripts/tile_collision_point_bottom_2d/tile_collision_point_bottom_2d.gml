@@ -1,5 +1,5 @@
 
-///@param tile_map_id
+///@paramtile_map_id
 ///@param point_arrays
 var tile_map_id = argument[0];
 

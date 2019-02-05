@@ -21,7 +21,7 @@ if (state == states.attackplayer) {
 }
 
 if (state == states.immobileplayer) {
-	#region Attack
+	#region Immobile
 	immobile_oPlayer();
 	#endregion
 }

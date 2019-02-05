@@ -1,10 +1,8 @@
 ///@param tile_map_id
-///@param tile_size
-///@param velocity_array
+
 
 var tile_map_id = argument0;
-var tile_size = argument1;
-var velocity = argument2;
+
 
 var v2_x = 0;
 var v2_y = 1;

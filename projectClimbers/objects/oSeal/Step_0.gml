@@ -42,7 +42,7 @@ if right_hit {
 }
 
 //Reaches cliff
-resolve_cliff(collision_tile_map_id,32,velocity);
+resolve_cliff(collision_tile_map_id);
 
 
 // Collides with oPlayer
