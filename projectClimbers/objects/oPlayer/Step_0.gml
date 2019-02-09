@@ -4,6 +4,7 @@
 	list of states:
 		- Move
 		- Attack
+		- Immobile
 		- Hit
 		- Death
 */
