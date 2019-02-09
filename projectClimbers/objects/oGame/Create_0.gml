@@ -47,5 +47,6 @@ enum states {
 	// oSeal
 	moveseal,
 	hitseal,
-	deathseal
+	retreatseal,
+	buildseal
 }
