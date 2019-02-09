@@ -34,14 +34,3 @@ if (state == states.buildseal) {
 	build_oSeal();
 	#endregion
 }
-
-if (state == states.deathplayer) {
-	#region Death
-	death_oPlayer();
-	#endregion
-}
-
-
-
-
-
