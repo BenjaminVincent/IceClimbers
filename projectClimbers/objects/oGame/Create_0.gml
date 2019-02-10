@@ -27,7 +27,6 @@ viewport_ypos = camera_get_view_y(view_camera[0])
 viewport_bottom_ypos = viewport_ypos + viewport_height
 view_temp = viewport_bottom_ypos
 #endregion
-
 // set oGame position
 y = room_height - viewport_height/2; 
 x = room_width/2;
@@ -36,6 +35,11 @@ screen_move_interval = 14*32
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
+
+// initalize oSeal list
+for (var i = 0; i < instance_number(oSeal); i += 1) {
+	global.seal_list[i] = instance_find(oSeal, i);	
+}
 
 enum states {
 	// oPlayer	

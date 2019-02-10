@@ -72,12 +72,14 @@ if x_input > 0 {
 	dir = "left"; 
 	image_xscale = -1;	
 }
-if place_meeting(x, y, oSeal) or y > viewport_bottom_ypos {
-	state = states.hitplayer
+for (var i = 0; i < array_length_1d(global.seal_list); i += 1) {
+	if (place_meeting(x, y, global.seal_list[i]) and global.seal_list[i].state != states.hitseal) or y > viewport_bottom_ypos {
+		state = states.hitplayer;
+	}
 }
 if hammer and on_ground {
-	state = states.attackplayer
+	state = states.attackplayer;
 }
 if view_temp != viewport_bottom_ypos {
-	state = states.immobileplayer
+	state = states.immobileplayer;
 }

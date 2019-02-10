@@ -1,7 +1,7 @@
 /// @description initialize enemy
-
-initial_x = x;
-initial_y = y;
+state = states.moveseal;
+recall_x = x;
+recall_y = y;
 
 hit = false;
 
@@ -12,9 +12,6 @@ velocity = [0, 0];
 grav = 1.6;
 max_velocity = [1, 10];
 acceleration = 2.1;
-
-right_hit = false;
-left_hit = false;
 
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
