@@ -5,8 +5,13 @@ recall_y = y;
 
 hit = false;
 
-left = 1;
-right = 0;
+if (recall_x < room_width/2) {
+	left = 0;
+	right = 1;
+} else {		
+	left = 1;
+	right = 0;
+}
 
 velocity = [0, 0];
 grav = 1.6;

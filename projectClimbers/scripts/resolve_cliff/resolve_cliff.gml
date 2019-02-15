@@ -1,6 +1,5 @@
 ///@param tile_map_id
 
-
 var tile_map_id = argument0;
 
 
@@ -23,13 +22,14 @@ var tile_bottom = tile_collision_point_bottom_2d(tile_map_id,bottom_left_point,b
 			right = 0;
 		break;
 		case 0:
-			/*while tile_bottom == 0 {
-				var saved_right = right;
-				var saved_left = left;
-				right = 0;
-				left = 0;
-			}
-			right = saved_right;
-			left = saved_left; */
 		break;
 	}
+	
+for (var i = 0; i < array_length_1d(global.seal_list); i += 1) {
+	if (global.seal_list[i].state = states.hitseal and (x < 0 or x > room_width)) {
+		global.seal_list[i].x = recall_x;
+		global.seal_list[i].y = recall_y;
+		global.seal_list[i].state = states.moveseal;
+		
+	}
+}
