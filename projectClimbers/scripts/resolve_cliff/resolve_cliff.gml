@@ -25,11 +25,3 @@ var tile_bottom = tile_collision_point_bottom_2d(tile_map_id,bottom_left_point,b
 		break;
 	}
 	
-for (var i = 0; i < array_length_1d(global.seal_list); i += 1) {
-	if (global.seal_list[i].state = states.hitseal and (x < 0 or x > room_width)) {
-		global.seal_list[i].x = recall_x;
-		global.seal_list[i].y = recall_y;
-		global.seal_list[i].state = states.moveseal;
-		
-	}
-}
