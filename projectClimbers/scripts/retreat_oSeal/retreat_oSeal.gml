@@ -2,6 +2,7 @@ parent_oSeal();
 var bottom_left_point = [bbox_left, bbox_bottom];
 var bottom_right_point = [bbox_right, bbox_bottom];
 var tile_bottom = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point);
+sprite_index = sSealRetreat;
 
 // right side
 if (tile_bottom == 1) {

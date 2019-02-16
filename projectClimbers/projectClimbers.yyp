@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "22a482ab-926c-4d1d-bef4-c4f09282f4d6",
+            "Value": {
+                "id": "1624d8ea-4545-4b4a-8801-c9ecd052c4f5",
+                "resourcePath": "sprites\\sSealRetreat\\sSealRetreat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23cf67f2-8400-47df-bd53-6a42bc8899d5",
             "Value": {
                 "id": "281ac988-06dc-475a-9f5a-11c2bb3791e0",
@@ -516,6 +524,14 @@
                 "id": "c46b692b-4eb7-41ca-abe9-8e91c42f637f",
                 "resourcePath": "views\\d83d5497-3c9b-43b1-8f4e-314621a1a37c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d917d733-be38-42ec-acb1-e04d13da2143",
+            "Value": {
+                "id": "85a98a1d-6935-4b46-a7dc-7e865b20b9e0",
+                "resourcePath": "sprites\\sSealBuild\\sSealBuild.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
