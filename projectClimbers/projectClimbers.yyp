@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "abff5054-41d5-436b-befd-e573875790c5",
+            "Value": {
+                "id": "400feb56-1f7c-465e-83b3-74da758ffc4b",
+                "resourcePath": "sprites\\sEggplant\\sEggplant.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae07220e-a137-4547-a835-eefbb4054374",
             "Value": {
                 "id": "2cd62d5a-26c9-4e9c-8e39-d8104ec4c84c",
