@@ -21,3 +21,6 @@ acceleration = 2.1;
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
+
+off_screen_left = camera_get_view_x(view_camera[0]);
+off_screen_right = camera_get_view_width(view_camera[0]) + off_screen_left;
