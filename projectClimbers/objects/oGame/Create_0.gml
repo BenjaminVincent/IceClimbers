@@ -27,6 +27,8 @@ viewport_ypos = camera_get_view_y(view_camera[0])
 viewport_bottom_ypos = viewport_ypos + viewport_height
 view_temp = viewport_bottom_ypos
 #endregion
+check = false
+
 // set oGame position
 y = room_height - viewport_height/2; 
 x = room_width/2;

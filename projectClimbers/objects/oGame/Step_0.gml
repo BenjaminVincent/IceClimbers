@@ -48,11 +48,37 @@ if view_temp != viewport_bottom_ypos {
 	oGame.y --;
 }#endregion
 
-if mouse_check_button_pressed(mb_left) {
+if (mouse_check_button_pressed(mb_left) and !check) {
 	var viewprt_ypos = camera_get_view_y(view_camera[0])
 	var viewprt_bottom_ypos = viewprt_ypos + view_hport[0]
 	var layer_id = layer_get_id("collisionTiles");
 	var colli_tile_map_id = layer_tilemap_get_id(layer_id);
 	var landing_cell = tilemap_get_at_pixel(colli_tile_map_id,mouse_x,viewport_bottom_ypos-48)
 	show_debug_message("landing cell = "+string(landing_cell))
+}
+
+if keyboard_check_pressed(ord("C")) {
+	if check {
+		check = false
+		show_debug_message("Seal check mode is off")
+	}
+	else if !check {
+		check = true
+		show_debug_message("Seal check mode is on")
+	}
+}
+if check {
+	if mouse_check_button_pressed(mb_left) {
+		if position_meeting(mouse_x,mouse_y,oSeal){
+			//show_debug_message("seal found")
+			for (var i = 0; i < array_length_1d(global.seal_list); i += 1) {
+				if position_meeting(mouse_x, mouse_y, global.seal_list[i]) {
+				var seal_state = global.seal_list[i].state;
+				show_debug_message("this seal is in state number "+string(seal_state))
+				} 
+			}
+		} else {
+		show_debug_message("no seal found")
+		}
+	}
 }
