@@ -14,7 +14,16 @@ if (tile_bottom == 1) {
 	right = 1;
 }
 
-max_velocity = [2, 10];
+max_velocity = [3, 10];
 if (x < off_screen_left or x > off_screen_right){
+	x = recall_x;
+	y = recall_y;
+	if (recall_x < room_width/2) {
+		left = 0;
+		right = 1;
+	} else {		
+		left = 1;
+		right = 0;
+	}
 	state = states.buildseal;
 }
