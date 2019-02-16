@@ -60,22 +60,25 @@ if velocity[v2_y] > 0 {
 		
 } else {
 	var tile_top = tile_collision_point(tile_map_id, [bbox_left, bbox_top], [bbox_right - 1, bbox_top]);
+	// if the top of the object has collided with a tile
 	if tile_top {
 		y = bbox_top & ~(tile_size - 1);
 		y += tile_size + y - bbox_top;
 		velocity[@ v2_y] = 0;	
-		// additional varibles define the cells (tiles) to the left and right of the player
-		var oPlayer_x = tilemap_get_cell_x_at_pixel(tile_map_id, oPlayer.x, oPlayer.y);
-		var oPlayer_x1r = tilemap_get_cell_x_at_pixel(tile_map_id, oPlayer.x + 32, oPlayer.y);
-		var oPlayer_x1l = tilemap_get_cell_x_at_pixel(tile_map_id, oPlayer.x - 32, oPlayer.y);
-		var oPlayer_y = tilemap_get_cell_y_at_pixel(tile_map_id, oPlayer.x, oPlayer.y - 32);		
+		// additional varibles define the cells (tiles) above and to the left and right of the object (player)
+		var oPlayer_x = tilemap_get_cell_x_at_pixel(tile_map_id, x, y);
+		var oPlayer_x1r = tilemap_get_cell_x_at_pixel(tile_map_id, x + 32, y);
+		var oPlayer_x1l = tilemap_get_cell_x_at_pixel(tile_map_id, x - 32, y);
+		var oPlayer_y = tilemap_get_cell_y_at_pixel(tile_map_id, x, y - 32);		
 		var tilemap_data = tilemap_get(tile_map_id, oPlayer_x, oPlayer_y);
 		var index = tile_get_index(tilemap_data);
-			if index == 2 {
-				var data = tile_set_index(tilemap_data, 0);
-				tilemap_set(tile_map_id, data, oPlayer_x, oPlayer_y);	
-			}
-		// if index is 0 and colision occurs there must be a block above in an adjacent cell
+		// if the tile above the player is index 2 it is a breakable tile
+		if index == 2 {
+			//"break" tile
+			var data = tile_set_index(tilemap_data, 0);
+			tilemap_set(tile_map_id, data, oPlayer_x, oPlayer_y);	
+		}
+		// if index is 0 and colision occurs there must be a block above it in an adjacent cell
 		if index == 0 {
 			// if the right side of the player is in same cell as the orgin change the idex of the one to the left
 			if cell_right == tilemap_data {
@@ -90,7 +93,7 @@ if velocity[v2_y] > 0 {
 			} else if cell_left == tilemap_data{
 				data_2 = tilemap_get(tile_map_id, oPlayer_x1r, oPlayer_y);
 				data_2 = tile_get_index(data_2)
-					// 2 is the breakable tile id
+					// if its a breakable tile
 					if data_2 == 2 {
 						data_2 = tile_set_index(data_2,0);
 					}
