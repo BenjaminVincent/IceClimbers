@@ -13,7 +13,7 @@ if (tile_bottom == 1) {
 	right = 1;
 }
 
-acceleration = 3; // from 2.1
+max_velocity = [2, 10];
 if (x < off_screen_left or x > off_screen_right){
 	state = states.buildseal;
 }
