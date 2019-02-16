@@ -24,6 +24,5 @@ velocity[v2_y] += grav;
 //Resolve
 resolve_collision(collision_tile_map_id, 32, velocity);
 
-//Reaches cliff
-resolve_cliff(collision_tile_map_id);
+
 

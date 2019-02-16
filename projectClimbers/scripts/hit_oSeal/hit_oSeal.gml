@@ -12,9 +12,6 @@ if x < mid_room {
 	right = 1;
 }
 
-/*var bottom_left_point = [bbox_left, bbox_bottom];
-var bottom_right_point = [bbox_right, bbox_bottom];
-var tile_bottom = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point);*/
 if (x < 0 or x > room_width) {
 	x = recall_x
 	y = recall_y
