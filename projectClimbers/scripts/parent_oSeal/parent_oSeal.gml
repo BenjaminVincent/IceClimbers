@@ -1,5 +1,7 @@
 var x_input = (right - left) * acceleration;
 
+off_screen_left = camera_get_view_x(view_camera[0]);
+off_screen_right = camera_get_view_x(view_camera[0] + camera_get_view_width(view_camera[0]));
 /*
 Vectors:
 	v2_x is the 0th index in velocity for the x direction
