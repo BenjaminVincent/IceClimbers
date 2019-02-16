@@ -15,8 +15,11 @@ milliseconds = PassedTime mod 1000;
 if seconds < 10 {
 	seconds = "0" + string(seconds)	
 } else {
-	seconds = seconds;	
-} #endregion
+	seconds = seconds;
+} 
+global.minutes = minutes;
+global.seconds = seconds;
+#endregion
 
 #region view and oGame movment
 // the play has moved high enough to start moving the view

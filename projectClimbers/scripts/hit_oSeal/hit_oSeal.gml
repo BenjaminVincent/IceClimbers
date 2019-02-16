@@ -24,7 +24,7 @@ if x < mid_room {
 	right = 1;
 }
 
-if (x < 0 or x > room_width) {
+if (x < 0 or x > off_screen_right) {
 	x = recall_x;
 	y = recall_y;
 	state = states.moveseal;

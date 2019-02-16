@@ -5,7 +5,7 @@ for(i=0;i<health;i++){												// loop through the number of hearts we have
 }
 
 // Draw timer
-draw_text(room_width-50, 50, string(minutes) + ":" + + string(seconds));
+draw_text(room_width-50, 50, string(minutes) + ":" + string(seconds));
 
 
 // Draw FPS
