@@ -1,7 +1,7 @@
 /// @description
 dir = "right";
 velocity = [0, 0];
-jump_speed = 26;
+jump_speed = 20;
 max_velocity = [4, 16];
 acceleration = 2.1;
 alive = true;

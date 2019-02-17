@@ -4,8 +4,6 @@ global.asspect_hight = 9;
 viewport_height = room_width*global.asspect_hight/global.asspect_width;
 viewport_width = room_width;
 
-room_height = viewport_height
-
 var dwidth = display_get_width();
 var dheight = display_get_height();
 var xpos = (dwidth / 2) - 480;

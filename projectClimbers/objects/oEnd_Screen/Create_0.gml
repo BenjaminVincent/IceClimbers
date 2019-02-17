@@ -1,6 +1,8 @@
 col_1 = make_color_rgb(225,96,244);
 col_2 = make_color_rgb(237,89,73);
 
+room_height = room_width*global.asspect_hight/global.asspect_width;
+
 //center
 x = room_width/2;
 y = room_height/2;
