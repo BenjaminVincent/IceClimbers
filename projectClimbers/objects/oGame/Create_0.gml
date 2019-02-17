@@ -29,6 +29,9 @@ view_temp = viewport_bottom_ypos
 #endregion
 check = false
 
+// gravity
+global.grav = 1
+
 // set oGame position
 y = room_height - viewport_height/2; 
 x = room_width/2;

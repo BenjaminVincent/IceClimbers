@@ -22,7 +22,7 @@ if x_input == 0 {
 }
 
 // Gravity
-velocity[v2_y] += grav;
+velocity[v2_y] += global.grav;
 
   
 

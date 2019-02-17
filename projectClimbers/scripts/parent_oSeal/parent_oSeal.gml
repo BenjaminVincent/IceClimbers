@@ -20,7 +20,7 @@ if x_input == 0 {
 }
 
 //Gravity
-velocity[v2_y] += grav;
+velocity[v2_y] += global.grav;
 
 //Resolve
 resolve_collision(collision_tile_map_id, 32, velocity);

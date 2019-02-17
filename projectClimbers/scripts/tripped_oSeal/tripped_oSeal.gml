@@ -1,4 +1,4 @@
-velocity[1] += grav;
+velocity[1] += global.grav;
 y += velocity[1];
 var hit = true
 var tile_right = tile_collision_point(collision_tile_map_id,[bbox_right - 1, bbox_top], [bbox_right - 1, bbox_bottom - 1]);
