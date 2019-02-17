@@ -6,7 +6,7 @@ x = room_width/2;
 y = room_height/2;
 
 //buttons
-buttons[0] = "Play Agian"
+buttons[0] = "Next level"
 buttons[1] = "Main Menu"
 buttons[2] = "Quit"
 button_count = array_length_1d(buttons)
