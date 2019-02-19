@@ -1,7 +1,7 @@
 #region initalize viewport
 event_inherited()
 
-var view_border = 32
+var view_border = -0
 
 
 view_enabled = true;
