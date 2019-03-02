@@ -6,13 +6,13 @@ if tile_bottom != 0 {
 } else if tile_bottom == 0 {
 	state = states.hitseal;
 }
-if (x < off_screen_left - 32){
+if (x < off_screen_left){
 	// left side
 	left = 0;
 	right = 1;
 	y = recall_y;
 	state = states.buildseal;
-} else if (x > off_screen_right){
+} else if (x > off_screen_right-32){
 	// right side
 	left = 1;
 	right = 0;

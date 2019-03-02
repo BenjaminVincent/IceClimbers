@@ -4,7 +4,7 @@ sprite_index = sSeal;
 max_velocity = [1, 10];
 
 //Reaches cliff
-if (x < off_screen_left-32 or x > off_screen_right) {
+if (x < off_screen_left or x > off_screen_right-32) {
 	resolve_cliff(collision_tile_map_id);
 } else if tile_bottom < 3 {
 	var temp = left;
