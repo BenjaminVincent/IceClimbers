@@ -122,7 +122,7 @@
             "Key": "1a52edaa-eecd-430c-9e32-a487158cc6f1",
             "Value": {
                 "id": "ce7c62de-02d8-49bd-aaf9-09882481ed0b",
-                "resourcePath": "tilesets\\tForeground\\tForeground.yy",
+                "resourcePath": "tilesets\\tForegroundIce\\tForegroundIce.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "69deb955-4628-40e1-88ca-fff4f9815ddc",
+            "Value": {
+                "id": "b592b3c7-e2d7-4704-af69-b887e6222402",
+                "resourcePath": "sprites\\sTile_foreground_dirt\\sTile_foreground_dirt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6d46efeb-56d6-4c24-8fff-a95a67bb0364",
             "Value": {
                 "id": "2a5abca2-49c4-4ff2-b815-2bf4bbebcd6a",
@@ -338,7 +346,7 @@
             "Key": "6e1fefe6-e442-484b-a231-3147429a3b26",
             "Value": {
                 "id": "bb8110e6-0fbb-47fe-953a-a39e0f2b2d55",
-                "resourcePath": "sprites\\sTile_foreground\\sTile_foreground.yy",
+                "resourcePath": "sprites\\sTile_foregroundIce\\sTile_foregroundIce.yy",
                 "resourceType": "GMSprite"
             }
         },

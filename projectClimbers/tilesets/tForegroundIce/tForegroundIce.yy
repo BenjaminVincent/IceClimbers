@@ -2,7 +2,7 @@
     "id": "1a52edaa-eecd-430c-9e32-a487158cc6f1",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tForeground",
+    "name": "tForegroundIce",
     "auto_tile_sets": [
         
     ],
