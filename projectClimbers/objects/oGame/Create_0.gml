@@ -1,18 +1,8 @@
 #region initalize viewport
-viewport_height = room_width*global.asspect_hight/global.asspect_width;
-viewport_width = room_width;
-var border_percent = 0.3;
-start_time = 0;
-saved_player_position = oPlayer.y
-camera_scroll_y = room_height-viewport_height
+event_inherited()
 
-var dwidth = display_get_width();
-var dheight = display_get_height();
-var xpos = (dwidth / 2) - 480;
-var ypos = (dheight / 2) - 270;
-window_set_rectangle(xpos, ypos, room_width,viewport_height);
+var view_border = -0
 
-surface_resize(application_surface, room_width, viewport_height);
 
 view_enabled = true;
 view_visible[0] = true;
@@ -22,15 +12,25 @@ view_yport[0] = 0;
 view_wport[0] = viewport_width;
 view_hport[0] = viewport_height;
 
-view_camera[0] = camera_create_view(32,camera_scroll_y,viewport_width-64,viewport_height,0,oGame,0,7,0,viewport_height);//(room_height/2)-room_height*border_percent);
+var view_width = viewport_width-(2*view_border);
+var scale_percent = view_width/viewport_width;
+var view_height = viewport_height*scale_percent;
+camera_scroll_y = room_height-view_height;
+
+view_camera[0] = camera_create_view(view_border,camera_scroll_y,view_width,view_height,0,oGame,0,7,0,viewport_height);
+
 viewport_ypos = camera_get_view_y(view_camera[0])
 viewport_bottom_ypos = viewport_ypos + viewport_height
 view_temp = viewport_bottom_ypos
 #endregion
+saved_player_position = oPlayer.y
 check = false
+start_time = 0;
+// gravity
+global.grav = 1
 
 // set oGame position
-y = room_height - viewport_height/2; 
+y = room_height - view_height/2; 
 x = room_width/2;
 screen_move_interval = 14*32
 
@@ -38,10 +38,15 @@ screen_move_interval = 14*32
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
 
+#region lists of objects
 // initalize oSeal list
 for (var i = 0; i < instance_number(oSeal); i += 1) {
-	global.seal_list[i] = instance_find(oSeal, i);	
+	global.seal_list[i] = instance_find(oSeal, i);
 }
+// intialize oEggplant list
+for (var j = 0; j < instance_number(oEggplant); j += 1) {
+	global.eggplant_list[j] = instance_find(oEggplant, j);
+} #endregion
 
 enum states {
 	// oPlayer	
@@ -54,5 +59,6 @@ enum states {
 	moveseal,
 	hitseal,
 	retreatseal,
-	buildseal
+	buildseal,
+	trippedseal,
 }

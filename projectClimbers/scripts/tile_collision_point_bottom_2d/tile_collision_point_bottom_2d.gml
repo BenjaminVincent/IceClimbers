@@ -12,7 +12,7 @@ var v2_y = 1;
 
 // Loop through the v2_x and v2_y
 for (var i = 1; i < argument_count; i++) {
-	// There are 4 arguments passed, arg[0] and arg[1] are tile_map_id and tile_map_id_2 respectivly
+	// There are 3 arguments passed, arg[0] is tile_map_id
 	// and the other 2 are the v2_x and v2_y
 	var point_a = argument[1];
 	var point_b = argument[2];

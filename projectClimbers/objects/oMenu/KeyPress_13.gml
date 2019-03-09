@@ -3,7 +3,7 @@
 
 switch(menu_index) {
 	case 0:
-		room_goto_next()
+		room_goto(rGame0);
 		break
 	case 1:
 		break

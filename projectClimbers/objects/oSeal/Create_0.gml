@@ -4,6 +4,9 @@ recall_x = x;
 recall_y = y;
 
 hit = false;
+fallen = false;
+first = true;
+tile_size = 32;
 
 if (recall_x < room_width/2) {
 	left = 0;
@@ -14,9 +17,8 @@ if (recall_x < room_width/2) {
 }
 
 velocity = [0, 0];
-grav = 1.6;
 max_velocity = [1, 10];
-acceleration = 2.1;
+acceleration = 3;
 
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");

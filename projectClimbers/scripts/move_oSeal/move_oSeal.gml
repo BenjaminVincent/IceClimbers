@@ -1,12 +1,18 @@
 parent_oSeal();
-
-var bottom_left_point = [bbox_left, bbox_bottom];
-var bottom_right_point = [bbox_right, bbox_bottom];
-var tile_bottom = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point);
+fallen = false
+sprite_index = sSeal;
+max_velocity = [1, 10];
 
 //Reaches cliff
-if (x < off_screen_left-32 or x > off_screen_right) {
+if (x < off_screen_left or x > off_screen_right-32) {
 	resolve_cliff(collision_tile_map_id);
 } else if tile_bottom < 3 {
+	var temp = left;
+	left = right;
+	right = temp;
 	state = states.retreatseal;
+}
+//if tripped
+if (tile_bottom_a = 0 and tile_bottom_b = 2) or (tile_bottom_a = 1 and tile_bottom_b = 0){
+	state = states.trippedseal
 }

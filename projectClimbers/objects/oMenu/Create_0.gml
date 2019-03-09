@@ -1,3 +1,5 @@
+room_height = room_width*global.asspect_hight/global.asspect_width;
+
 //center
 x = room_width/2;
 y = room_height/2;
