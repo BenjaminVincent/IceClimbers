@@ -1,8 +1,8 @@
 {
-    "id": "70d892ec-c325-437a-b9cc-7ca31bb79802",
+    "id": "fd459592-22bd-4424-9dab-ade7f2b159e8",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tCollisions",
+    "name": "tForegroundDirt",
     "auto_tile_sets": [
         
     ],
@@ -17,7 +17,7 @@
     "out_columns": 4,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
-    "spriteId": "25285074-f73a-488c-bdb2-bf8b1f4ccf8b",
+    "spriteId": "69deb955-4628-40e1-88ca-fff4f9815ddc",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {
@@ -37,10 +37,7 @@
             11,
             12,
             13,
-            14,
-            15,
-            16,
-            17
+            14
         ],
         "SerialiseFrameCount": 1
     },
@@ -48,7 +45,7 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 18,
+    "tile_count": 15,
     "tileheight": 32,
     "tilehsep": 0,
     "tilevsep": 0,

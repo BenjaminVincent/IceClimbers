@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "25285074-f73a-488c-bdb2-bf8b1f4ccf8b",
+            "Value": {
+                "id": "bfbf4e72-a05b-426b-8950-a9ec49c58c57",
+                "resourcePath": "sprites\\sTile_rock\\sTile_rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2da56853-81fb-4578-8668-485cfc6b537b",
             "Value": {
                 "id": "1377886a-f3f8-4a5d-b613-2f9fd77396ae",
@@ -372,6 +380,14 @@
                 "id": "764cc513-6329-4396-9e1b-93d9a9ba3ba8",
                 "resourcePath": "tilesets\\tCollisions\\tCollisions.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "716807ab-49f5-431c-8511-59cd5a3c477a",
+            "Value": {
+                "id": "3f3224f7-d253-4d92-96ac-4b14639e1c61",
+                "resourcePath": "sprites\\sTile_background_dirt\\sTile_background_dirt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -684,6 +700,14 @@
                 "id": "1d2fd1ee-ca5a-46e5-9ea7-0bf9548d5ad3",
                 "resourcePath": "sprites\\sCollide\\sCollide.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd459592-22bd-4424-9dab-ade7f2b159e8",
+            "Value": {
+                "id": "180058f8-6987-4ee7-ac30-68c45ae8e402",
+                "resourcePath": "tilesets\\tForegroundDirt\\tForegroundDirt.yy",
+                "resourceType": "GMTileSet"
             }
         }
     ],
