@@ -1,9 +1,21 @@
 parent_oSeal();
-
 mid_room = room_width * .5;
-
 sprite_index = sSealHit;
-	
+
+if tile_bottom == 0 {
+	if first {
+		saved_max_velocity = max_velocity;
+		first = false;
+	}
+	max_velocity = [0, 10];
+	fallen = true
+} else if fallen {
+	saved_max_velocity[@ 0] *= acceleration;
+	max_velocity = saved_max_velocity;
+	fallen = false;
+	first = true;
+}
+
 if x < mid_room {
 	left = 1;
 	right = 0;
@@ -12,11 +24,10 @@ if x < mid_room {
 	right = 1;
 }
 
-if (x < 0 or x > room_width) {
+if (x < 0 or x > off_screen_right) {
 	x = recall_x;
 	y = recall_y;
 	state = states.moveseal;
-	sprite_index = sSeal;
 	if (recall_x < room_width/2) {
 		left = 0;
 		right = 1;
@@ -25,5 +36,3 @@ if (x < 0 or x > room_width) {
 		right = 0;
 	}
 }
-
-	

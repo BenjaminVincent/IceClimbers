@@ -22,7 +22,7 @@ if x_input == 0 {
 }
 
 // Gravity
-velocity[v2_y] += grav;
+velocity[v2_y] += global.grav;
 
   
 
@@ -54,6 +54,12 @@ if (x > room_width) {
 	x = 0;	
 } else if (x < 0) {
 	x = room_width;	
+}
+for (var j = 0; j < array_length_1d(global.eggplant_list); j += 1) {
+	if place_meeting(x, y, global.eggplant_list[j]) {
+		instance_destroy(global.eggplant_list[j]);
+		score += 100;
+	}
 }
 
 

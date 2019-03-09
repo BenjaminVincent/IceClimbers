@@ -8,7 +8,7 @@
 		- Hit
 		- Retreat
 		- Build
-
+		-Tripped
 */
 
 if (state == states.moveseal) {
@@ -32,5 +32,11 @@ if (state == states.retreatseal) {
 if (state == states.buildseal) {
 	#region Build
 	build_oSeal();
+	#endregion
+}
+
+if (state == states.trippedseal) {
+	#region Build
+	tripped_oSeal();
 	#endregion
 }

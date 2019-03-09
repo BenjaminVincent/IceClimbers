@@ -1,1 +1,1 @@
-game_end();
+event_inherited();

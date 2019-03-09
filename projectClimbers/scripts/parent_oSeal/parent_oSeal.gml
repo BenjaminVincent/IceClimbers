@@ -1,4 +1,4 @@
-var x_input = (right - left) * acceleration;
+var x_input = (right - left);
 
 
 /*
@@ -20,10 +20,14 @@ if x_input == 0 {
 }
 
 //Gravity
-velocity[v2_y] += grav;
+velocity[v2_y] += global.grav;
 
 //Resolve
 resolve_collision(collision_tile_map_id, 32, velocity);
 
-
-
+var bottom_left_point = [bbox_left, bbox_bottom];
+var bottom_right_point = [bbox_right, bbox_bottom];
+tile_bottom = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point);
+var bottom_middle_point = [bbox_right - 16, bbox_bottom];
+tile_bottom_a = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_middle_point);
+tile_bottom_b = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_middle_point,bottom_right_point);

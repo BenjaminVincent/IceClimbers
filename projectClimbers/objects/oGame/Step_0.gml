@@ -15,17 +15,11 @@ milliseconds = PassedTime mod 1000;
 if seconds < 10 {
 	seconds = "0" + string(seconds)	
 } else {
-	seconds = seconds;	
-} #endregion
-
-#region code used for debuging the bottom screen position in the room
-/*if keyboard_check_pressed(ord("U")) {
-	y --;
-	show_debug_message("oGame's y = " + string(y))
-	show_debug_message("the viewport bottom = " + string(viewport_bottom_ypos))
-	viewport_ypos = camera_get_view_y(view_camera[0]);
-	viewport_bottom_ypos = viewport_ypos + viewport_height;
-}*/ #endregion
+	seconds = seconds;
+} 
+global.minutes = minutes;
+global.seconds = seconds;
+#endregion
 
 #region view and oGame movment
 // the play has moved high enough to start moving the view
@@ -48,6 +42,7 @@ if view_temp != viewport_bottom_ypos {
 	oGame.y --;
 }#endregion
 
+#region debug features
 if (mouse_check_button_pressed(mb_left) and !check) {
 	var viewprt_ypos = camera_get_view_y(view_camera[0])
 	var viewprt_bottom_ypos = viewprt_ypos + view_hport[0]
@@ -81,4 +76,4 @@ if check {
 		show_debug_message("no seal found")
 		}
 	}
-}
+} #endregion
