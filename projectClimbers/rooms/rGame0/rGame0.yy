@@ -343,7 +343,11 @@
             "id": "56b823da-b5b8-4540-8ce5-bf85b53a84f9",
             "animationFPS": 15,
             "animationSpeedType": "0",
+<<<<<<< HEAD
             "colour": { "Value": 4294967295 },
+=======
+            "colour": { "Value": 4289966981 },
+>>>>>>> RealBEN
             "depth": 11300,
             "grid_x": 32,
             "grid_y": 32,
