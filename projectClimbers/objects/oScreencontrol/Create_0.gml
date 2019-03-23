@@ -1,6 +1,7 @@
 // create global variables
 global.asspect_width = 16;
 global.asspect_hight = 9;
+
 viewport_height = room_width*global.asspect_hight/global.asspect_width;
 viewport_width = room_width;
 
