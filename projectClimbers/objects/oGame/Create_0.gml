@@ -1,8 +1,7 @@
 #region initalize viewport
 event_inherited()
 
-var view_border = -0
-
+room_middle = room_width/2
 
 view_enabled = true;
 view_visible[0] = true;
@@ -12,16 +11,19 @@ view_yport[0] = 0;
 view_wport[0] = viewport_width;
 view_hport[0] = viewport_height;
 
-var view_width = viewport_width-(2*view_border);
-var scale_percent = view_width/viewport_width;
-var view_height = viewport_height*scale_percent;
+var view_zoom_perecnt = 0.6;
+view_width = viewport_width*view_zoom_perecnt//-(2*view_border);
+//var scale_percent = view_width/viewport_width;
+view_height = viewport_height*view_zoom_perecnt;
+var view_border = room_middle - view_width/2;
 camera_scroll_y = room_height-view_height;
 
-view_camera[0] = camera_create_view(view_border,camera_scroll_y,view_width,view_height,0,oGame,0,7,0,viewport_height);
+view_camera[0] = camera_create_view(view_border,camera_scroll_y,view_width,view_height,0,oGame,0,7,0,view_height);
 
-viewport_ypos = camera_get_view_y(view_camera[0])
-viewport_bottom_ypos = viewport_ypos + viewport_height
-view_temp = viewport_bottom_ypos
+view_ypos = camera_get_view_y(view_camera[0])
+view_bottom_ypos = view_ypos + view_height;
+view_temp = view_bottom_ypos
+show_debug_message("view bottom = "+ string(view_bottom_ypos));
 #endregion
 saved_player_position = oPlayer.y
 check = false

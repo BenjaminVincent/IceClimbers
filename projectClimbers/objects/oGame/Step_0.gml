@@ -1,9 +1,8 @@
 /// @description Control timer
-
 bottom_left_point = [oPlayer.bbox_left + 2, oPlayer.bbox_bottom];
 bottom_right_point = [oPlayer.bbox_right - 2, oPlayer.bbox_bottom];
-viewport_ypos = camera_get_view_y(view_camera[0]);
-viewport_bottom_ypos = viewport_ypos + viewport_height;
+view_ypos = camera_get_view_y(view_camera[0]);
+view_bottom_ypos = view_ypos + view_height;
 
 #region Timer
 PassedTime = current_time - start_time;
@@ -26,20 +25,24 @@ global.seconds = seconds;
 if oPlayer.y < (saved_player_position - 12*32) and tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_right_point) > 0 {
 	oGame.y -= screen_move_interval
 	viewport_ypos = camera_get_view_y(view_camera[0]);
-	viewport_bottom_ypos = viewport_ypos + viewport_height;
+	view_bottom_ypos = view_ypos + view_height;
 	saved_player_position = oPlayer.y;
 	screen_move_interval += 32
-	//show_debug_message("oGame's y = " + string(y))
+	show_debug_message("oGame's y = " + string(y))
 }
 // the view is moving
-if view_temp != viewport_bottom_ypos {
-	viewport_ypos = camera_get_view_y(view_camera[0]);
-	viewport_bottom_ypos = viewport_ypos + viewport_height;
-	view_temp = viewport_bottom_ypos
-	//show_debug_message("the viewport bottom = " + string(viewport_bottom_ypos))
-	//show_debug_message("the tempory value = " + string(view_temp))
-} else if view_temp == viewport_bottom_ypos and ((viewport_bottom_ypos) mod 32) != 0 and oGame.y > 0 {
-	oGame.y --;
+if view_temp != view_bottom_ypos {
+	view_ypos = camera_get_view_y(view_camera[0]);
+	view_bottom_ypos = view_ypos + view_height;
+	view_temp = view_bottom_ypos
+	show_debug_message("the view bottom = " + string(view_bottom_ypos))
+	show_debug_message("the tempory value = " + string(view_temp))
+} else if view_temp == view_bottom_ypos // the view has moved satisfactory to the above conditions
+and ((round(view_bottom_ypos)) mod 32) != 0 // the bottom of the view isn't at a multiple of 32
+and oGame.y > 0 // oGame isn't trying to leave the room
+{
+	oGame.y --; // move oGame up
+	show_debug_message("oGame has been moved up");
 }#endregion
 
 #region debug features
