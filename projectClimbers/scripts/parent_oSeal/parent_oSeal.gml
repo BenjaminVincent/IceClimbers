@@ -31,3 +31,4 @@ tile_bottom = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_p
 var bottom_middle_point = [bbox_right - 16, bbox_bottom];
 tile_bottom_a = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_left_point,bottom_middle_point);
 tile_bottom_b = tile_collision_point_bottom_2d(collision_tile_map_id,bottom_middle_point,bottom_right_point);
+

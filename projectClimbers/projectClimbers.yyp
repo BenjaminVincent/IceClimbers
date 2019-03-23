@@ -106,7 +106,7 @@
             "Key": "17246eac-43dd-467b-a27b-1bbb5d9a1ad6",
             "Value": {
                 "id": "bebed81e-66c1-4e3a-94a7-e1b680084279",
-                "resourcePath": "sprites\\sSeal\\sSeal.yy",
+                "resourcePath": "sprites\\sSealRight\\sSealRight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -154,7 +154,7 @@
             "Key": "22a482ab-926c-4d1d-bef4-c4f09282f4d6",
             "Value": {
                 "id": "1624d8ea-4545-4b4a-8801-c9ecd052c4f5",
-                "resourcePath": "sprites\\sSealRetreat\\sSealRetreat.yy",
+                "resourcePath": "sprites\\sSealRetreatRight\\sSealRetreatRight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -171,6 +171,14 @@
             "Value": {
                 "id": "bfbf4e72-a05b-426b-8950-a9ec49c58c57",
                 "resourcePath": "sprites\\sTile_rock\\sTile_rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "267c7b79-faa1-4b5d-988e-9d021f477b6f",
+            "Value": {
+                "id": "71065907-f1dc-4bb5-b0e6-c909924c0e95",
+                "resourcePath": "sprites\\sSealRetreatLeft\\sSealRetreatLeft.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -564,6 +572,14 @@
                 "id": "9bab9946-0c03-4705-90ac-46aac63300d6",
                 "resourcePath": "scripts\\tile_collision_point\\tile_collision_point.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c8ff1fad-b39c-454c-bfdc-4207a9ef36e6",
+            "Value": {
+                "id": "bb916285-5f46-4910-bbf4-dffa31bfefd9",
+                "resourcePath": "sprites\\sSealLeft\\sSealLeft.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

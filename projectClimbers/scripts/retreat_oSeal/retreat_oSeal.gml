@@ -1,6 +1,11 @@
 parent_oSeal();
 
-sprite_index = sSealRetreat;
+// deal with animation directions:
+if right > 0 {
+	sprite_index = sSealRetreatRight;
+} else {
+	sprite_index = sSealRetreatLeft;	
+	}
 if tile_bottom != 0 {
 	max_velocity = [3, 10];
 } else if tile_bottom == 0 {

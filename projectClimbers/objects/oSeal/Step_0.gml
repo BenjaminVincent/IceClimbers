@@ -8,7 +8,7 @@
 		- Hit
 		- Retreat
 		- Build
-		-Tripped
+		- Tripped
 */
 
 if (state == states.moveseal) {
