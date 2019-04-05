@@ -1,7 +1,7 @@
 {
     "id": "1a2a7104-2dcc-4b64-830b-767e1bd5ecb7",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "fScore",
     "AntiAlias": 1,
     "TTFName": "",
@@ -10,6 +10,7 @@
     "charset": 0,
     "first": 0,
     "fontName": "Calibri",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1452,8 +1453,9 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": false,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         {
@@ -3698,6 +3700,8 @@
         }
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,

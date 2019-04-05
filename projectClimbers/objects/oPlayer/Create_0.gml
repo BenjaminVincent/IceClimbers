@@ -17,3 +17,8 @@ health = 3;
 
 // state default
 state = states.moveplayer
+
+
+if gpu_get_texfilter() {
+	gpu_set_texfilter(true);	
+}
