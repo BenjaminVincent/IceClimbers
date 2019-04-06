@@ -9,6 +9,7 @@ var dwidth = display_get_width();
 var dheight = display_get_height();
 var xpos = (dwidth / 2) - 480;
 var ypos = (dheight / 2) - 270;
-window_set_rectangle(xpos, ypos, room_width,viewport_height);
+
+window_set_rectangle(xpos, ypos, viewport_width,viewport_height);
 
 surface_resize(application_surface, room_width, viewport_height);

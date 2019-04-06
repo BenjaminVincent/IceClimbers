@@ -11,7 +11,7 @@ view_yport[0] = 0;
 view_wport[0] = viewport_width;
 view_hport[0] = viewport_height;
 
-var view_zoom_perecnt = 0.6;
+var view_zoom_perecnt = 1;
 view_width = viewport_width*view_zoom_perecnt;
 view_height = viewport_height*view_zoom_perecnt;
 var view_border = room_middle - view_width/2;
@@ -34,10 +34,12 @@ global.grav = 1
 y = room_height - view_height/2; 
 x = room_width/2;
 screen_move_interval = 9*32
+saved_screen_move_interval = screen_move_interval;
 
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
+
 
 #region lists of objects
 // initalize oSeal list

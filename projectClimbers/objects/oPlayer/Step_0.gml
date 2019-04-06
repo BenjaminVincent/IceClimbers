@@ -38,4 +38,3 @@ if (state == states.deathplayer) {
 	death_oPlayer();
 	#endregion
 }
-
