@@ -11,7 +11,7 @@ view_yport[0] = 0;
 view_wport[0] = viewport_width;
 view_hport[0] = viewport_height;
 
-var view_zoom_perecnt = 0.6;
+var view_zoom_perecnt = 1;
 view_width = viewport_width*view_zoom_perecnt;
 view_height = viewport_height*view_zoom_perecnt;
 var view_border = room_middle - view_width/2;
