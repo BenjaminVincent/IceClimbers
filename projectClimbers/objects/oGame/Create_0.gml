@@ -19,7 +19,9 @@ var view_zoom_percent = 0.5;
 view_width = viewport_width * view_zoom_percent;
 view_height = viewport_height * view_zoom_percent;
 camera_y= room_height-view_height;
-view_camera[0] = camera_create_view(0,camera_y,view_width,view_height,0,oGame,0,7,0,view_height);
+room_center = room_width/2;
+camera_x = room_center-view_width/2;
+view_camera[0] = camera_create_view(camera_x,camera_y,view_width,view_height,0,oGame,1000,7,100,view_height);
 
 get_camera_y_bottom(0);
 
@@ -32,8 +34,7 @@ global.grav = 1
 // set oGame position
 y = room_height - view_height/2;
 x = room_width/2;
-screen_move_interval = 9*32
-saved_screen_move_interval = screen_move_interval;
+screen_move_interval = 10*32
 
 // Regular layer
 var layer_id = layer_get_id("collisionTiles");

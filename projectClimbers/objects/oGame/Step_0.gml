@@ -28,7 +28,6 @@ if oPlayer.y < (saved_player_position - 9*32) and
 	viewport_ypos = camera_get_view_y(view_camera[0]);
 	view_bottom_ypos = view_ypos + view_height;
 	saved_player_position = oPlayer.y;
-	screen_move_interval += 32
 }
 
 // View is moving
@@ -39,4 +38,6 @@ and ((round(view_bottom_ypos)) mod 32) != 0 // the bottom of the view isn't at a
 and oGame.y > 0 // oGame isn't trying to leave the room
 {
 	oGame.y --; // move oGame up
-}#endregion
+}
+x = oPlayer.x
+#endregion
