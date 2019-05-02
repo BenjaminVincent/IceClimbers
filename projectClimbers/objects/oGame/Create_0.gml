@@ -15,7 +15,7 @@ view_hport[0] = viewport_height;
 	Changes zoom of camera
 	**This might be an issue**
 */
-var view_zoom_percent = 1;
+var view_zoom_percent = 0.5;
 view_width = viewport_width * view_zoom_percent;
 view_height = viewport_height * view_zoom_percent;
 camera_y= room_height-view_height;
