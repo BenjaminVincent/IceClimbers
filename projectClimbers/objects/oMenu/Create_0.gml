@@ -1,4 +1,4 @@
-room_height = room_width*global.asspect_hight/global.asspect_width;
+room_height = room_width*global.aspect_height/global.aspect_width;
 
 //center
 x = room_width/2;
