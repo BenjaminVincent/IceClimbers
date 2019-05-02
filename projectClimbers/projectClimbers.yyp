@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "62c02c6b-8fe2-4f80-b2e7-b99275581bb6",
+            "Value": {
+                "id": "37897fba-e1a7-4043-a562-945691e3def4",
+                "resourcePath": "scripts\\get_camera_y_bottom\\get_camera_y_bottom.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "69deb955-4628-40e1-88ca-fff4f9815ddc",
             "Value": {
                 "id": "b592b3c7-e2d7-4704-af69-b887e6222402",
@@ -460,6 +468,14 @@
                 "id": "4263d81b-a0db-4f37-acde-7449e003b345",
                 "resourcePath": "fonts\\fDefault\\fDefault.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "9252b116-596c-441e-9c87-032e81e83cf8",
+            "Value": {
+                "id": "cc2e0f5c-3e97-46a0-b6e2-97e3de5cdf1b",
+                "resourcePath": "views\\9252b116-596c-441e-9c87-032e81e83cf8.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -742,7 +758,8 @@
         "8ce70258-f477-4ad9-9b63-7088857f458a",
         "23cf67f2-8400-47df-bd53-6a42bc8899d5",
         "8ae45b74-8949-4a5c-8255-b2e77429b2cf",
-        "ae07220e-a137-4547-a835-eefbb4054374"
+        "ae07220e-a137-4547-a835-eefbb4054374",
+        "62c02c6b-8fe2-4f80-b2e7-b99275581bb6"
     ],
     "tutorial": ""
 }
